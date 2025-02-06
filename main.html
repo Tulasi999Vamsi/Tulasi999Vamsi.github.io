@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <style>
+            *
+            {
+                margin:0px;
+              padding: 0px;
+            }
+            nav
+            {
+                padding-left: 30px;
+                padding-top:15px;
+                background-color: burlywood;
+                padding-bottom:15px;
+                display:flex;
+                
+                
+                
+            }
+            nav>div 
+            {
+                margin-left: 800px;
+            }
+            a
+            {
+                text-decoration: none;
+                padding: 5px;
+                font-size: 18px;
+                font-weight:bold;
+                color:white;
+                border-bottom:2px solid greenyellow;
+              
+                margin:5px;
+                
+
+
+            }
+            .logo
+            {
+                padding-right:200px;
+                font-size: 30px;
+                font-weight:bold;
+                color:white;
+            }
+            .d
+            {
+                display: flex;
+           
+                align-items: center;
+          
+            }   
+            body{
+                background-color: white;
+            }
+            .profile
+            {
+                height: 500;
+                width:500;
+                border: 5px solid red;
+                border-radius: 800px;     
+                object-fit: cover;
+                 
+           
+           
+            }
+            .box
+            {
+                width: 600px;
+                height: 300px; /* Add a height to make it visible */
+                border: 2px solid red;
+                margin: 50px;
+                padding:50px;
+                
+            }
+            .box2
+            {
+                width: 800px;
+                height: 400px; /* Add a height to make it visible */
+                border: 2px solid green;
+                margin: 30px;
+                margin-left: 100px;
+                display: flex;
+             
+                
+           
+            }
+            .typing-text
+            {
+                font-size: 30px;
+                color: red;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 4px solid red; /* This will simulate the cursor */
+                width: 0;
+                animation: typing 5s steps(30) 1s forwards, blink 0.75s step-end 2s forwards;
+            }
+            .left_box
+            {
+                border: 2px solid blueviolet;
+                height: 400;
+                width: 600;
+                margin-top: 30px;
+                margin-left:30px;
+            }
+
+            /* Typing Animation Keyframes */
+            @keyframes typing
+            {
+                from { width: 0; }
+                to { width: 100%; }
+            }
+
+            /* Cursor Blinking Keyframes */
+            @keyframes blink
+            {
+                50% { border-color: transparent; }
+            }
+            .list
+            {
+               padding: 50px;
+            }
+            li{
+                color: green;
+                font-size: 20px;
+            }
+            h1
+            {
+                color: red;
+                text-decoration: underline;
+            }
+            ul 
+            {
+                padding-left: 50px;
+                padding-top: 50px;
+            }
+
+            
+          
+        </style>
+        
+    </head>
+    <body>
+        <header>
+        <div>
+       
+            <nav>
+                <p class="logo">VAMSI</p>
+                <div>
+                    <a href="">Home</a>
+                    <a href="">Services</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact me</a>
+                </div>
+             
+            </nav>
+            <section>
+                <div class="d" >
+                    <div class="box">
+                        <p class="typing-text" style="font-size: 30px;color:red;font-weight: bold;">I am vamsi krishna sai</p>
+                        <p style="font-size: 20px;color:green">Software engineer</p>
+
+                    </div>
+                    <div style="padding-left:200px; padding-top:80px">
+                        <img class="profile" src="my image.jpg">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div style="display: flex;">
+                <div class="left_box">
+                    <div class="list">
+                        <h1>My skills</h1>
+
+                        <ul>
+                            <li>python</li>
+                            <li>java</li>
+                            <li>C</li>
+                            <li>spring boot</li>
+                            <li>Mysql</li>
+                            <li>C#</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                    </div>
+                  
+
+                </div>
+                <div class="box2">
+
+                    <div style="padding: 10px;">
+                        <img src="python.png" height="200" width="200">
+
+                    </div>
+             
+                   <div>
+                    <img src="java.png">
+                   </div>
+                   <div>
+                    <img src="springboot.png" height="200" width="200">
+                   </div>
+
+                </div>
+            </div>
+            </section>
+            <footer>
+                <div style="background-color: burlywood;height: 200px;">
+                 <p style="color:orangered  ;font-size:25px;padding: 50px;text-align: center;">&copy;Vamsi,2025,All rights reserved.</p>
+                </div>
+            </footer>
+
+       </header>
+       
+    </body>
+</html>
